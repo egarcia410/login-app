@@ -6,7 +6,7 @@ var path = require('path');
 var controller = require('./controllers/user.controller');
 
 var port = 8080;
-var db = 'mongodb://localhost:userExample';
+var db = 'mongodb://localhost/userExample1';
 
 mongoose.connect(db);
 app.use(express.static(path.join(__dirname, 'views')));
